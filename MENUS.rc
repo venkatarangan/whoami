@@ -1,0 +1,38 @@
+//
+#include "WhoAmI3.h"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+WhoAmI3 MENU 
+{
+    POPUP "&File"
+	{
+		MENUITEM "E&xit",                       IDM_EXIT
+	}
+
+	POPUP "&Desktop"
+	{
+	    MENUITEM "&Cascade"		    IDM_CASCADE
+		MENUITEM "&Tile"		    IDM_TILE
+		//MENUITEM "&Restore"			IDM_RESTORE
+	}
+
+	POPUP "&Help"{
+		MENUITEM "&About",                      IDM_ABOUT
+	}
+
+}
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDM_REFRESH             "Refresh the client area"
+    IDM_EXIT                "Exit this program"
+END
